@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>welcome to validation e-mail address</title>
+<script langrage="JavaScript">
+function test1()
+{
+if(form1.text1.value=="")
+{alert("please enter a string!");}
+else
+{alert("hi "+form1.text1.value+"! Welcome to Varification ");}
+}
+function test2()
+{
+if(form1.text2.value==""||form1.text2.value.indexOf('@',0)==-1)
+{alert("Not a valid e-mail address!");}
+else
+{alert("Ok!");}
+}
+</script>
+</head>
+<bod>
+<form name="form1">
+Enter you name:<input type="text1" name="text1">&nbsp; &nbsp;&nbsp;
+<input type="button" name="b1" value="test input" onClick="test1(this.form)">
+<br><br>
+Enter your e-mail address:<input type="text" name="text2">&nbsp;&nbsp;&nbsp;
+<input type="button" name="b2" value="test input" onClick="test2(this.form)">
+</body>
+</html>

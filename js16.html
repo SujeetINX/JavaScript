@@ -1,0 +1,97 @@
+<HTML>
+<HEAD><TITLE>WELCOME TO JSCRIPT ONLOAD Events</TITLE></HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+var a=0,b=0,c=0,ch;
+function first(form1)
+{form1.text1.value=form1.text1.value+"1";}
+function second(form1)
+{form1.text1.value=form1.text1.value+"2";}
+function third(form1)
+{form1.text1.value=form1.text1.value+"3";}
+function four(form1)
+{form1.text1.value=form1.text1.value+"4";}
+function five(form1)
+{form1.text1.value=form1.text1.value+"5";}
+function six(form1)
+{form1.text1.value=form1.text1.value+"6";}
+function seven(form1)
+{form1.text1.value=form1.text1.value+"7";}
+function eight(form1)
+{form1.text1.value=form1.text1.value+"8";}
+function nine(form1)
+{form1.text1.value=form1.text1.value+"9";}
+function zero(form1)
+{form1.text1.value=form1.text1.value+"0";}
+function plus(form1)
+{a=parseInt(form1.text1.value);
+form1.text1.value=" ";
+ch="p";}
+function minus(form1)
+{a=parseInt(form1.text1.value);
+form1.text1.value=" ";
+ch="n";}
+function into(form1)
+{a=parseInt(form1.text1.value);
+form1.text1.value=" ";
+ch="i";}
+function upon (form1)
+{a=parseInt(form1.text1.value);
+form1.text1.value=" ";
+ch="u";}
+function cancle(form1)
+{a=parseInt(form1.text1.value);
+form1.text1.value=" ";
+ch="null";}
+function equal(form1)
+{b=parseInt(form1.text1.value);
+if(ch=="p")
+{form1.text1.value=a+b;}
+if(ch=="n")
+{form1.text1.value=a-b;}
+if(ch=="i")
+{form1.text1.value=a*b;}
+if(ch=="u")
+{form1.text1.value=a/b;}
+if(ch=="null")
+{form1.text1.value=null;}
+}
+
+function close1()
+{close();}
+
+</script>
+
+<body bgcolor=yellow>
+<form name="form1">
+<font color=blue size=5>CALCULATOR <br></font>
+<input type="text" name="text1"><br>
+<table border=1 bgcolor=yellow>
+<tr>
+<td><input type="button" name="bt1" value=" 1 " onclick="first(form1)"></td>
+<td><input type="button" name="bt2" value=" 2 " onclick="second(form1)"></td>
+<td><input type="button" name="bt3" value=" 3 " onclick="third(form1)"></td>
+<td><input type="button" name="bt4" value=" 4 " onclick="four(form1)"></td>
+</tr>
+<td><input type="button" name="bt5" value=" 5 " onclick="five(form1)"></td>
+<td><input type="button" name="bt6" value=" 6 " onclick="six(form1)"></td>
+<td><input type="button" name="bt7" value=" 7 " onclick="seven(form1)"></td>
+<td><input type="button" name="bt8" value=" 8 " onclick="eight(form1)"></td>
+</tr>
+<tr>
+<td><input type="button" name="bt9" value=" 9 " onclick="nine(form1)"></td>
+<td><input type="button" name="bt0" value=" 0 " onclick="zero(form1)"></td>
+<td><input type="button" name="btp" value=" + " onclick="plus(form1)"></td>
+<td><input type="button" name="btn" value=" - " onclick="minus(form1)"></td>
+</tr>
+<tr>
+<td><input type="button" name="btm" value=" * " onclick="into(form1)"></td>
+<td><input type="button" name="btd" value=" / " onclick="upon(form1)"></td>
+<td><input type="button" name="bte" value=" = " onclick="equal(form1)"></td>
+<td><input type="button" name="btc" value=" c " onclick="cancle(form1)"></td>
+</tr>
+</table>
+<input type="button" name="close" value="close" onclick="close1()">
+</form>
+</body>
+</html>
+

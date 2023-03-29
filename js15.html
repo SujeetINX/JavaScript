@@ -1,0 +1,34 @@
+<HTML>
+<HEAD><TITLE>WELCOME TO JSCRIPT ONLOAD Events</TITLE></HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+var a,b,c;
+function plus()
+{
+a=parseInt(form1.t1.value);
+b=parseInt(form1.t2.value);
+c=a+b;
+}
+function minus()
+{
+a=parseInt(form1.t1.value);
+b=parseInt(form1.t2.value);
+c=a-b;
+}
+function equal()
+{
+form1.t3.value=c;
+}
+</script>
+<body bgcolor=yellow>
+<h3><font color=blue>Calculate</font></h3>
+<form name="form1">
+A=<input type="test" name="t1"><br>
+B=<input type="text" name="t2"><br>
+<input type="button" name="bt1" value="+" onclick="plus()">
+<input type="button" name="bt3" value="-" onclick="minus()">
+<input type="button" name="bt2" value="=" onclick="equal()"><br>
+C=<input type="text" name="t3"><br>
+</form>
+</body>
+</html>
+
